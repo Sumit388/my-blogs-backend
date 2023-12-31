@@ -6,6 +6,7 @@ const dotenv = require("dotenv").config();
 const userRoute = require("./routes/userRoutes");
 const messageRoute = require("./routes/messagesRoutes");
 const blogRoute = require("./routes/blogRoutes");
+const commentRoute = require("./routes/commentRoute");
 
 // * Middleware Import * //
 const errorHandler = require("./middlewares/errorHandler");
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use("/api/users", userRoute);
 app.use("/api/messages", messageRoute);
 app.use("/api/blogs", blogRoute);
+app.use("/api/comments", commentRoute);
 app.use(errorHandler);
 
 try {

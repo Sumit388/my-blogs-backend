@@ -8,10 +8,6 @@ const commentSchema = new mongoose.Schema(
       type: String,
       required: [true, "Comment should have a body"],
     },
-    timestamp: {
-      type: Date,
-      default: Date.now,
-    },
     name: {
       type: String,
     },
@@ -48,7 +44,7 @@ const blogSchema = mongoose.Schema(
       type: String,
       required: [true, "Blogs should have a proper body"],
     },
-    catagory: {
+    category: {
       type: [
         {
           type: String,
@@ -67,6 +63,7 @@ const blogSchema = mongoose.Schema(
     },
     comments: {
       type: [commentSchema],
+      default: [],
     },
   },
   {
