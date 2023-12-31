@@ -14,11 +14,7 @@ const route = express.Router();
 
 route
   .route("/")
-  .get(
-    authenticationHandler,
-    authorizationHandler(["ADMIN", "EDITOR"]),
-    getAllMessages
-  )
+  .get(authenticationHandler, authorizationHandler(["ADMIN"]), getAllMessages)
   .post(sendMessage);
 
 route

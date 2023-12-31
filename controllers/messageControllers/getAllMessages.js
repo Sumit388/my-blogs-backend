@@ -6,7 +6,7 @@ const messageModel = require("../../models/messagesModel");
 
 //@desc Get all messages details
 //@route GET /api/messages
-//@access ADMIN & EDITOR
+//@access ADMIN
 //@filters search by: name || email || id , sort by: lastest || oldest
 const getAllMessages = asyncHandler(async (req, res) => {
   // Extract query parameters from the request

@@ -12,7 +12,10 @@ const authorizationHandler = require("../middlewares/authorizationHandler");
 
 const route = express.Router();
 
-route.route("/:blogId/").get(getAllComments).post(addCommentToBlog);
+route
+  .route("/:blogId/")
+  .get(getAllComments)
+  .post(authenticationHandler, addCommentToBlog);
 
 route
   .route(":blogId/:commentId/:id")

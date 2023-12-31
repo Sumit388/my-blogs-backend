@@ -7,6 +7,9 @@ const blogsModel = require("../../models/blogsModel");
 // * Utils Import * //
 const { isValidObjectId } = require("../../utils/mongooseUtils");
 
+//@desc Get individual blogs
+//@route GET /api/blogs/:id
+//@access public
 const getIndividualBlog = asyncHandler(async (req, res) => {
   // If invalid blog Id
   if (!isValidObjectId(req?.params?.id)) {
