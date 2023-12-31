@@ -16,7 +16,7 @@ const sendMessage = asyncHandler(async (req, res) => {
   } else {
     await messageModel.create({ name, email, body, user_id });
     res.status(201).json({
-      message: "add new contact deatils",
+      message: "Message sent to the admin",
     });
   }
 });

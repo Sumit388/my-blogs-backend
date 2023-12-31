@@ -26,7 +26,7 @@ const userSignup = asyncHandler(async (req, res) => {
 
   //   Registering the new user here
   const hashedPassword = await bcrypt.hash(password, 10);
-  const generatedUser = await User.create({
+  const generatedUser = await userModel.create({
     name,
     email,
     password: hashedPassword,

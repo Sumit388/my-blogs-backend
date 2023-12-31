@@ -10,10 +10,10 @@ const userModel = require("../../models/userModel");
 //@route POST /api/users/login
 //@access public
 const userLogin = asyncHandler(async (req, res) => {
-  const { name, email, password } = req.body;
+  const { email, password } = req.body;
 
   //   If any of the fields are empty
-  if (!name || !email || !password) {
+  if (!email || !password) {
     res.status(400);
     throw new Error("All fileds are mandatory.");
   }
