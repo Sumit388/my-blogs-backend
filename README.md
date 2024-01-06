@@ -3,100 +3,100 @@
 ## User Routes: 
 
 ### User Sign Up: 
-**Description:** User signup
-**Route:** /POST /api/users/register
-**Access:** PUBLIC
+**Description:** User signup <br />
+**Route:** /POST /api/users/register <br />
+**Access:** PUBLIC <br />
 
 ### User Log In: 
-**Description:** User login
-**Route:** POST /api/users/login
-**Access:** PUBLIC
+**Description:** User login <br />
+**Route:** POST /api/users/login <br />
+**Access:** PUBLIC <br />
 
 ### Edit the Individual User details
-**Description:** Update individual user details
-**Route:** PATCH /api/users/:id
-**Access:** ADMIN, USER to which this entry belongs.
+**Description:** Update individual user details <br />
+**Route:** PATCH /api/users/:id <br />
+**Access:** ADMIN, USER to which this entry belongs. <br />
 
 ### Get the Individual User details
-**Description:** Get individual user details
-**Route:** GET /api/users/:id
-**Access:** PUBLIC
+**Description:** Get individual user details <br />
+**Route:** GET /api/users/:id <br />
+**Access:** PUBLIC <br />
 
 ### Get the details of the all Users
-**Description:** Get all user details
-**Route:** GET /api/users
-**Access:** ADMIN
+**Description:** Get all user details <br />
+**Route:** GET /api/users <br />
+**Access:** ADMIN <br />
 
 ### Delete the user from the system.
-**Description:** delete individual user details
-**Route:** DELETE /api/users/:id
-**Access:** ADMIN, USER to which this entry belongs.
+**Description:** delete individual user details <br />
+**Route:** DELETE /api/users/:id <br />
+**Access:** ADMIN, USER to which this entry belongs. <br />
 
 
 ## Contact Us Routes
 
 ### Send a message to the Admin
-**Description:** Send a message to the admin
-**Route:** POST /api/messages
-**Access:** PUBLIC
+**Description:** Send a message to the admin <br />
+**Route:** POST /api/messages <br />
+**Access:** PUBLIC <br />
 
 ### View all the messages sent to the Admin
-**Description:** Get all messages details
-**Route:** GET /api/messages
-**Access:** ADMIN & EDITOR
-**Filter:** search by: name || email || id , sort by: lastest || oldest
+**Description:** Get all messages details <br />
+**Route:** GET /api/messages <br />
+**Access:** ADMIN & EDITOR <br />
+**Filter:** search by: name || email || id , sort by: lastest || oldest <br />
 
 ### Delete a message sent to the Admin.
-**Description:** delete a message
-**Route:** DELETE /api/messages/:id
-**Access:** ADMIN
+**Description:** delete a message <br />
+**Route:** DELETE /api/messages/:id <br />
+**Access:** ADMIN <br />
 
 
 ## Blogs related Routes
 
 ### View all the blogs on the website
-**Description:** Get all blogs
-**Route:** GET /api/blogs
-**Access:** public
-**Filter:** search by: authorName || category || tags, sort by: lastest || oldest || popularity
+**Description:** Get all blogs <br />
+**Route:** GET /api/blogs <br />
+**Access:** public <br />
+**Filter:** search by: authorName || category || tags, sort by: lastest || oldest || popularity <br />
 
 ### View Individual blog details.
-**Description:** Get individual blogs
-**Route:** GET /api/blogs/:id
-**Access:** public
+**Description:** Get individual blogs <br />
+**Route:** GET /api/blogs/:id <br />
+**Access:** public <br />
 
 ### Add a blog to the website.
-**Description:** Upload a blog
-**Route:** POST /api/blogs
-**Access:** ADMIN & EDITOR
+**Description:** Upload a blog <br />
+**Route:** POST /api/blogs <br />
+**Access:** ADMIN & EDITOR <br />
 
 ### Delete the blog from our website
-**Description:** delete individual blog details
-**Route:** DELETE /api/blogs/:id
-**Access:** ADMIN, EDITOR
+**Description:** delete individual blog details <br />
+**Route:** DELETE /api/blogs/:id <br />
+**Access:** ADMIN, EDITOR <br />
 
 ### Update the already present blog on our website
-**Description:** Update individual blog details
-**Route:** PATCH /api/blogs/:id
-**Access:** ADMIN, EDITOR
+**Description:** Update individual blog details <br />
+**Route:** PATCH /api/blogs/:id <br />
+**Access:** ADMIN, EDITOR <br />
 
 
 ## Comments of the Blogs Routes
 
 ### Add a comment to a blog
-**Description:** Post a Comment to the blog
-**Route:** POST /api/comments/:blogId
-**Access:** USER
+**Description:** Post a Comment to the blog <br />
+**Route:** POST /api/comments/:blogId <br />
+**Access:** USER <br />
 
 ### View all the comments on the blog
-**Description:** Get all Comments of the blog
-**Route:** GET /api/comments/:blogId
-**Access:** PUBLIC
+**Description:** Get all Comments of the blog <br />
+**Route:** GET /api/comments/:blogId <br />
+**Access:** PUBLIC <br />
 
 ### Delete the comments
-**Description:** Delete a comment from the blog
-**Route:** DELETE /api/comments/:blogId/:commentId/:userId
-**Access:** ADMIN, EDITOR, USER to which this comment belongs
+**Description:** Delete a comment from the blog <br />
+**Route:** DELETE /api/comments/:blogId/:commentId/:userId <br />
+**Access:** ADMIN, EDITOR, USER to which this comment belongs <br />
 
 
 # Permissions
